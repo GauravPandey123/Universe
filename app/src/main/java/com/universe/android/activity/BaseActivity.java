@@ -15,10 +15,11 @@ import com.universe.android.R;
 public class BaseActivity extends AppCompatActivity {
     protected Context mContext;
     private boolean isReplaced = false;
+
     @Override
     public void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(setLayoutId());
+//        setContentView(R.layout.activity_main);
         mContext=this;
 
     }

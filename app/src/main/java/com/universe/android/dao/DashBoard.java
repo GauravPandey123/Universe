@@ -6,6 +6,7 @@ package com.universe.android.dao;
 
 public class DashBoard {
 
+
     public String getCrystelNumber() {
         return crystelNumber;
     }
@@ -30,7 +31,12 @@ public class DashBoard {
         this.retailerNo = retailerNo;
     }
 
-    private String crystelNumber,distributerNo,retailerNo;
+    private String crystelNumber, distributerNo, retailerNo;
 
+    public DashBoard(String crystelNumber, String distributerNo, String retailerNo) {
+        this.crystelNumber = crystelNumber;
+        this.distributerNo = distributerNo;
+        this.retailerNo = retailerNo;
+    }
 
 }
