@@ -23,7 +23,7 @@ import butterknife.ButterKnife;
  * Created by gaurav.pandey on 25-12-2017.
  */
 
-public class DashBoardActivity extends AppCompatActivity {
+public class DashBoardActivity extends BaseActivity {
 
     @BindView(R.id.dashboard_recyclerview)
     RecyclerView dashboardRecyclerview;
@@ -33,13 +33,11 @@ public class DashBoardActivity extends AppCompatActivity {
     DashBoardAdapter dashBoardAdapter;
     ArrayList<DashBoard> dashBoardArrayList;
     LinearLayoutManager linearLayoutManager;
-    Context mContext;
 
     @Override
     public void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.dashboard_activity);
-        mContext=this;
         ButterKnife.bind(this);
         setUpElement();
     }
